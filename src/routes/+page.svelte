@@ -1,16 +1,19 @@
-<script lang="ts">
+<!-- <script lang="ts">
     import{Alert} from "flowbite-svelte";
 </script>
 
 <Alert>TEST</Alert>
 
-
+ -->
 
 <div class="flex items-center justify-center min-h-screen bg-gray-100">
-    <div class="bg-white rounded-lg shadow-lg p-10 max-w-md text-center">
-      <h1 class="text-4xl font-bold text-gray-800 mb-4">Welcome to my Portfolio!</h1>
-      <p class="text-gray-600 text-lg">
-        Thank you for visiting my portfolio. Feel free to explore my projects and work.
-      </p>
-    </div>
+  <div class="bg-white rounded-lg shadow-lg p-10 max-w-md text-center">
+    <h1 class="text-4xl font-bold text-gray-800 mb-4">I am AL JHON DUPAL</h1>
+    <h3 class="text-2xl font-bold text-gray-800 mb-4">Welcome to my Portfolio!</h3>
+    
+    <p class="text-gray-600 text-lg mb-4">
+      I'm a dedicated to be one of the good developer that enjoys experimenting with coding and using programming to solve issues. I like working with different web technologies, and I'm always learning new things to get better at what I do.
+    </p>
+    <a href="https://dupalaljhon.github.io" target="_blank" class="inline-block bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-600">Connect with me</a>
   </div>
+</div>
