@@ -1,6 +1,6 @@
 <script>
     import "../app.css";
-  
+    export const prerender = true;
     // Toggle the mobile menu visibility
     let menuOpen = false;
   </script>
