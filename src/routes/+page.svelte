@@ -35,15 +35,20 @@
   </div> -->
 <!-- </nav>  -->
 
-<div class="flex items-center justify-center min-h-screen bg-gray-100 ">
-  <div class="bg-white rounded-lg shadow-lg p-10 max-w-xl text-center ">
-    <img src="\myphoto.jpg" alt="AL JHON DUPAL" class="rounded-full h-33 w-32 mx-auto mb-4">
-    <h1 class="text-4xl font-bold text-gray-800 mb-4">I am AL JHON DUPAL</h1>
-    <h3 class="text-2xl font-bold text-gray-800 mb-4">My Portfolio using Sveltekit!</h3>
-    
-    <p class="text-gray-800 text-lg mb-4">
-      I'm a dedicated to be one of the good developer that enjoys experimenting with coding and using programming to solve issues. I like working with different web technologies, and I'm always learning new things to get better on what I do.
-    </p>
-    
+<div class="flex flex-col lg:flex-row items-center justify-between p-6 lg:p-0 mt-36" style="margin-top: 100px;">
+  <!-- Left side: Text Details -->
+  <div class="text-left mt-10 lg:mt-40 lg:ml-32">
+    <h3 class="text-2xl lg:text-4xl font-bold text-gray-800 mb-2 lg:mb-4">Hello, It's me</h3>
+    <h1 class="text-4xl lg:text-6xl font-bold text-gray-800 mb-2 lg:mb-4">AL JHON DUPAL</h1>
+    <h3 class="text-xl lg:text-3xl font-bold text-gray-800 mb-2 lg:mb-4">And I am an Information Technology Student</h3>
+  </div>
+
+  <!-- Right side: Image with Sky Blue Shadow -->
+  <div class="flex-shrink-0 mt-10 lg:mt-24 lg:mr-32">
+    <img src="/myphoto.jpg" alt="AL JHON DUPAL" class="rounded-full h-40 w-40 lg:h-80 lg:w-80 shadow-lg ring-4 ring-sky-600" style="box-shadow: 0px 10px 30px rgba(0, 123, 255, 0.5);">
   </div>
 </div>
+
+
+    
+
