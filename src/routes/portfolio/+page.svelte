@@ -141,7 +141,7 @@
     <!-- Video Player -->
     <video class="video-player" controls>
         <source src="/mywork6.mp4" type="video/mp4">
-        <track src="/captions/mywork6.mp4" kind="captions" srclang="en" label="English captions">
+        <track src="/mywork6.mp4" kind="captions" srclang="en" label="English captions">
     
     </video>
     
