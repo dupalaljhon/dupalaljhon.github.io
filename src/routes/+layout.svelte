@@ -1,7 +1,6 @@
 <script>
     import "../app.css";
-    export const prerender = true;
-    // Toggle the mobile menu visibility
+    // export const prerender = true;
     let menuOpen = false;
   </script>
   
@@ -13,7 +12,7 @@
   
   <slot></slot>
   
-  <nav class="bg-gray-800 p-4 fixed w-full top-0 z-50">
+  <nav style="background-color: #51515C;" class="p-4 fixed w-full top-0 z-50">
     <div class="container mx-auto flex justify-between items-center">
       <!-- Left side: Welcome Text -->
       <div class="text-white font-bold text-lg">

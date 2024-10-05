@@ -1,12 +1,37 @@
-<div class="flex items-center justify-center min-h-screen bg-gray-100 ">
-    <div class="bg-white rounded-lg shadow-lg p-10 max-w-xl text-center ">
-      
-      <h1 class="text-4xl font-bold text-gray-800 mb-4">I am AL JHON DUPAL</h1>
-      <h3 class="text-2xl font-bold text-gray-800 mb-4">Welcome to my Portfolio!</h3>
-      
-      <p class="text-gray-800 text-lg mb-4">
-        Hello! My name is [Your Name], and I’m excited to be returning to my studies after taking some time off. During my break, I gained valuable life experiences that have given me a fresh perspective and renewed motivation to pursue my academic goals. I’m eager to continue learning, grow my skills, and contribute to both my personal development and the academic community. I believe this new chapter will allow me to apply everything I’ve learned outside the classroom and make the most of my time as a student. I look forward to connecting with others who are also passionate about learning and growth.
+<script>
+  let showMore = false;
+</script>
+
+<!-- Page Content Wrapper with Background Color -->
+<div style="background-color: #3f3f46; min-height: 100vh;" class="flex items-center justify-center">
+  <!-- Main Content Container -->
+  <div class="rounded-lg shadow-lg p-6 sm:p-8 md:p-10 max-w-4xl sm:max-w-5xl text-center mx-auto" style="margin-top: 100px; background-color: #404045;">
+    <h3 class="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-4">Portfolio using Svelte!</h3>
+    
+    <p class="text-sm sm:text-base md:text-lg text-white mb-4">
+      Hello! Al Jhon Dupal, a 23-year-old I am a BS Information Technology student at Gordon College. My dream before was to be BS Marine Transportation. Before entering college, due to not enough income from my parents, I decided to choose another course that didn’t need spending money and has high-paying job prospects in the future. Since my family couldn't afford the costs for that course, I chose a more reasonable pathway, a BS in Information Technology (BSIT). I chose this field since it provides lots of career options and could potentially lead to well-paying positions. 
+      <br><br>
+      In 2020, I started as a regular student with dreams to achieve. However, when the pandemic hit, everything changed. I had already enrolled in the BSIT program at Gordon College, and all our classes shifted online. During my first year, I learned valuable lessons that opened my eyes to what the future holds in the IT field. I successfully completed my first year in 2021, but then faced a significant challenge: my computer, which I used for attending classes and completing assignments, broke down. Unfortunately, we couldn’t afford a replacement.
+    </p>
+
+    {#if showMore}
+      <p class="text-sm sm:text-base md:text-lg text-white mb-4">
+        I finished my first year in 2021; unfortunately, my computer that I used to join classes and do the activities was damaged, and we didn't have money for a replacement. Due to my family's financial problems and the economy reopening, the prices of goods were really high, and we could not afford to buy some stocks for our house. Then, I decided to stop my studies and get a job to help them. I used to be a factory worker as my job, and I saved a little bit of money to have savings to continue my studies.
       </p>
-      
-    </div>
+  
+      <p class="text-sm sm:text-base md:text-lg text-white mb-4">
+        After two years of working and saving, I finally had enough money to return to my studies. Thankfully, my family’s financial situation had improved a little, and we were no longer struggling as much. I decided to pursue my education again because I’m determined to earn a diploma—something no one in my family has achieved yet.
+      </p>
+  
+      <p class="text-sm sm:text-base md:text-lg text-white mb-4">
+        On the first day back in class, I felt a bit nervous and shy due to the two-year age gap between me and my classmates, but over time, I was able to adjust and fit in. Although I’m not particularly skilled in programming, I excel in technical areas like hardware. Still, I’m pushing myself to learn and improve as a developer because I know that programming skills can lead to high-paying job opportunities in the future.
+      </p>
+    {/if}
+
+    <!-- Read More Button -->
+    <button on:click={() => showMore = !showMore} 
+      class="mt-4 px-4 py-2 text-white bg-gray-500 hover:bg-gray-700 rounded-md">
+      {showMore ? 'Read Less' : 'Read More'}
+    </button>
   </div>
+</div>
