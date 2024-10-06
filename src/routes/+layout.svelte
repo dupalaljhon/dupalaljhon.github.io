@@ -1,8 +1,9 @@
 <script>
     import "../app.css";
+    import { Button } from 'flowbite-svelte'
     export const prerender = true;
     let menuOpen = false;
-  </script>
+</script>
   
   <svelte:head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,25 +13,21 @@
   
   <slot></slot>
   
-  <nav style="background-color: #51515C;" class="p-4 fixed w-full top-0 z-50">
+  <nav style="background-color: #3F3F5C;" class="p-4 fixed w-full top-0 z-50">
     <div class="container mx-auto flex justify-between items-center">
-      <!-- Left side: Welcome Text -->
-      <div class="text-white font-bold text-lg">
+      <div class="text-white font-bold text-2xl" style="margin-left: 15px">
         Welcome to my portfolio
       </div>
   
-      <!-- Right side: Nav Links -->
-      <div class="space-x-4 hidden lg:flex">
-        <a href="/" class="text-white hover:bg-gray-700 focus:ring-4 focus:ring-gray-500 font-semibold rounded-lg px-4 py-2 transition duration-200">Home</a>
-        <a href="/about" class="text-white hover:bg-gray-700 focus:ring-4 focus:ring-gray-500 font-semibold rounded-lg px-4 py-2 transition duration-200">About</a>
-        <a href="/portfolio" class="text-white hover:bg-gray-700 focus:ring-4 focus:ring-gray-500 font-semibold rounded-lg px-4 py-2 transition duration-200">Portfolio</a>
-        <a href="/contact" class="text-white hover:bg-gray-700 focus:ring-4 focus:ring-gray-500 font-semibold rounded-lg px-4 py-2 transition duration-200">Contact Me</a>
+      <div class="space-x-4 hidden lg:flex" style="margin-right: 10px">
+        <Button color="dark" href="/">Home</Button>
+        <Button color="dark" href="/about">About</Button>
+        <Button color="dark" href="/portfolio">Portfolio</Button>
+        <Button color="dark" href="/contact">Contact</Button>
       </div>
   
-      <!-- Hamburger Menu (visible on mobile) -->
       <div class="lg:hidden">
         <button on:click={() => (menuOpen = !menuOpen)} class="text-white focus:outline-none">
-          <!-- Icon for the hamburger menu -->
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
@@ -38,7 +35,6 @@
       </div>
     </div>
   
-    <!-- Mobile Menu -->
     {#if menuOpen}
       <div class="bg-gray-800 text-white space-y-2 px-4 py-2 lg:hidden">
         <a href="/" class="block text-white hover:bg-gray-700 focus:ring-4 focus:ring-gray-500 font-semibold rounded-lg px-4 py-2 transition duration-200">Home</a>
@@ -49,8 +45,3 @@
     {/if}
   </nav>
   
-  <!-- Ensure page content is pushed down to accommodate the fixed nav -->
-  <!-- <div class="pt-16">
-    <slot></slot>
-  </div>
-   -->

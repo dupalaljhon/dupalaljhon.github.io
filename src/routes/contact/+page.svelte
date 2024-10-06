@@ -12,12 +12,12 @@
     display: inline-block;
     width: 90px;
     height: 90px;
-    fill: white; /* Change icon color to white */
+    fill: white; 
     transition: fill 0.3s ease;
   }
 
   .social-icons a:hover {
-    fill: #1e40af; /* Change hover color */
+    fill: #1e40af; 
   }
 
   svg {
@@ -32,7 +32,7 @@
     align-items: center;
     padding: 20px;
     font-weight: bold;
-    color: white; /* Change heading color to white */
+    color: white; 
     font-size: 2rem; 
     text-align: center; 
   }

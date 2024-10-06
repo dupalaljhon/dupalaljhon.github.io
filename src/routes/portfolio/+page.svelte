@@ -27,7 +27,6 @@
 </script>
 
 <style>
-    /* Container styles */
     .flex-container {
         background-color: #3f3f46;
         min-height: 100vh;
@@ -38,7 +37,6 @@
         padding: 20px;
     }
 
-    /* Text and heading styles */
     .work-heading {
         margin-top: 100px;
         text-align: center;
@@ -50,7 +48,6 @@
         letter-spacing: 1.5px;
     }
 
-    /* Image row and image styling */
     .image-row {
         display: flex;
         justify-content: center;
@@ -62,8 +59,8 @@
     .image-container {
         flex-shrink: 0;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
-        position: relative; /* For absolute positioning of the arrow */
-        cursor: pointer; /* Indicate that the image is clickable */
+        position: relative; 
+        cursor: pointer;
     }
 
     .image-container img {
@@ -81,7 +78,6 @@
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     }
 
-    /* Video file name styling */
     .video-file-name {
         color: #f1f1f1;
         font-weight: bold;
@@ -90,7 +86,6 @@
         margin-bottom: 10px;
     }
 
-    /* Subheading styling */
     .sub-heading {
         color: #f1f1f1;
         font-weight: bold;
@@ -100,18 +95,16 @@
         margin-bottom: 20px;
     }
 
-    /* Video player styling */
     .video-player {
         margin-top: 20px;
         margin-bottom: 20px;
         width: 100%;
-        max-width: 1000px; /* Adjust as needed */
+        max-width: 1000px; 
         border-radius: 10px;
         border: 4px solid #fff;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     }
 
-    /* Arrow styling */
     .arrow {
         position: absolute;
         top: 50%;
@@ -133,7 +126,6 @@
         right: 10px;
     }
 
-    /* Larger screen adjustments */
     @media (min-width: 1024px) {
         .work-heading {
             font-size: 2.5rem;
@@ -150,7 +142,6 @@
         }
     }
 
-    /* Tablet adjustments */
     @media (max-width: 768px) {
         .work-heading {
             font-size: 2rem;
@@ -166,7 +157,6 @@
         }
     }
 
-    /* Mobile adjustments */
     @media (max-width: 480px) {
         .work-heading {
             font-size: 1.5rem;
@@ -182,7 +172,6 @@
         }
     }
 
-    /* Modal styles */
     .modal {
         position: fixed;
         top: 0;
@@ -193,14 +182,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        z-index: 1000; /* Ensure modal is on top */
+        z-index: 1000; 
     }
 </style>
 
 <div class="flex-container">
     <h1 class="work-heading">My Digital Design and Multimedia System Works</h1>
     
-    <!-- Top Row with 5 Images -->
     <div class="image-row">
         {#each images as image, index}
             <!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -210,7 +198,6 @@
         {/each}
     </div>
 
-    <!-- Zoomed Image Modal -->
     {#if isZoomed}
         <!-- svelte-ignore a11y-click-events-have-key-events -->
         <!-- svelte-ignore a11y-no-static-element-interactions -->
@@ -222,13 +209,11 @@
         </div>
     {/if}
 
-    <!-- Video File Name -->
     <div class="video-file-name">
         <h1>My AppDev Assessment</h1>
         <p class="sub-heading">Image Gallery</p>
     </div>
-
-    <!-- Video Player -->
+    
     <video class="video-player" controls>
         <source src="/mywork6.mp4" type="video/mp4">
         <track src="/mywork6.mp4" kind="captions" srclang="en" label="English captions">

@@ -1,12 +1,12 @@
 <script>
+  import { Button } from 'flowbite-svelte'; 
+  import { ArrowUpOutline, ArrowDownOutline } from 'flowbite-svelte-icons'; 
   let showMore = false;
 </script>
 
-<!-- Page Content Wrapper with Background Color -->
 <div style="background-color: #3f3f46; min-height: 100vh;" class="flex items-center justify-center">
-  <!-- Main Content Container -->
   <div class="rounded-lg shadow-lg p-6 sm:p-8 md:p-10 max-w-4xl sm:max-w-5xl text-center mx-auto" style="margin-top: 100px; background-color: #404045;">
-    <h3 class="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-4">Portfolio using Svelte!</h3>
+    <h3 class="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-4">About me</h3>
     
     <p class="text-sm sm:text-base md:text-lg text-white mb-4">
       Hello! Al Jhon Dupal, a 23-year-old I am a BS Information Technology student at Gordon College. My dream before was to be BS Marine Transportation. Before entering college, due to not enough income from my parents, I decided to choose another course that didn’t need spending money and has high-paying job prospects in the future. Since my family couldn't afford the costs for that course, I chose a more reasonable pathway, a BS in Information Technology (BSIT). I chose this field since it provides lots of career options and could potentially lead to well-paying positions. 
@@ -28,10 +28,16 @@
       </p>
     {/if}
 
-    <!-- Read More Button -->
-    <button on:click={() => showMore = !showMore} 
-      class="mt-4 px-4 py-2 text-white bg-gray-500 hover:bg-gray-700 rounded-md">
-      {showMore ? 'Read Less' : 'Read More'}
-    </button>
+    <div class="mt-6 flex justify-center">
+      <Button color="dark" on:click={() => showMore = !showMore} class="flex items-center gap-2">
+        {#if showMore}
+          <ArrowUpOutline class="w-6 h-6 text-white" />
+          <span>Read Less</span>
+        {:else}
+          <ArrowDownOutline class="w-6 h-6 text-white" />
+          <span>Read More</span>
+        {/if}
+      </Button>
+    </div>
   </div>
 </div>
