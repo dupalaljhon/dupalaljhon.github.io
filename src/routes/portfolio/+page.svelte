@@ -28,7 +28,7 @@
 
 <style>
     .flex-container {
-        background-color: #3f3f46;
+        background-color: #585858;
         min-height: 100vh;
         display: flex;
         align-items: center;
@@ -43,6 +43,17 @@
         font-weight: bold;
         color: #f1f1f1;
         margin-bottom: 20px;
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+    }
+
+    .logo-heading {
+        margin-top: 5px;
+        text-align: center;
+        font-weight: bold;
+        color: #f1f1f1;
+        margin-bottom: 10px;
         font-size: 2rem;
         text-transform: uppercase;
         letter-spacing: 1.5px;
@@ -184,6 +195,27 @@
         justify-content: center;
         z-index: 1000; 
     }
+
+    .logo-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px; 
+    margin-top: 20px;
+    margin-bottom: 100px;
+    flex-wrap: wrap; /* Allow logos to wrap on smaller screens */
+}
+
+.logo-container img {
+    width: 10%; /* Adjust the width as needed */
+    max-width: 100px; /* Max width for larger screens */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Add a hover effect */
+}
+
+.logo-container img:hover {
+    transform: scale(1.1); /* Scale up the logo on hover */
+}
+
 </style>
 
 <div class="flex-container">
@@ -227,4 +259,50 @@
         <source src="/mywork7.mp4" type="video/mp4">
         <track src="/mywork7.mp4" kind="captions" srclang="en" label="English captions">
     </video>
+    <h1 class="logo-heading">My Skills</h1>
+    <div class="logo-container">
+        
+        <img
+            width="100"
+            alt="Angular Logo"
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
+        />
+
+
+        <img
+            width="100"
+            alt="Java Logo"
+            src="https://www.vectorlogo.zone/logos/java/java-horizontal.svg"
+        />
+
+        <img
+            width="100"
+            alt="HTML Logo"
+            src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"
+        />
+
+        <img
+            width="100"
+            alt="CSS Logo"
+            src="https://www.vectorlogo.zone/logos/w3_css/w3_css-official.svg"
+        />
+
+        <img
+            width="100"
+            alt="PHP Logo"
+            src="https://www.vectorlogo.zone/logos/php/php-horizontal.svg"
+        />
+        <img
+        width="100"
+        alt="Photoshop Logo"
+        src="/icons8-photoshop-94.png"
+    />
+
+    <img
+    width="100"
+    alt="Svelte Logo"
+    src="https://www.vectorlogo.zone/logos/sveltetechnology/sveltetechnology-icon.svg"
+/>
+        
+    </div>
 </div>

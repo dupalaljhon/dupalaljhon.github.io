@@ -1,7 +1,8 @@
 <script>
     import "../app.css";
-    import { Button } from 'flowbite-svelte'
-    export const prerender = true;
+    import { Button} from 'flowbite-svelte'
+    
+    // export const prerender = true;
     let menuOpen = false;
 </script>
   
@@ -13,17 +14,17 @@
   
   <slot></slot>
   
-  <nav style="background-color: #3F3F5C;" class="p-4 fixed w-full top-0 z-50">
+  <nav style="background-color: 	#202020;" class="p-4 fixed w-full top-0 z-50">
     <div class="container mx-auto flex justify-between items-center">
       <div class="text-white font-bold text-2xl" style="margin-left: 15px">
         Welcome to my portfolio
       </div>
   
       <div class="space-x-4 hidden lg:flex" style="margin-right: 10px">
-        <Button color="dark" href="/">Home</Button>
-        <Button color="dark" href="/about">About</Button>
-        <Button color="dark" href="/portfolio">Portfolio</Button>
-        <Button color="dark" href="/contact">Contact</Button>
+        <Button color="light" href="/">Home</Button>
+        <Button color="light" href="/about">About</Button>
+        <Button color="light" href="/portfolio">Portfolio</Button>
+        <Button color="light" href="/contact">Contact</Button>
       </div>
   
       <div class="lg:hidden">
