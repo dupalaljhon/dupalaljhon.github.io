@@ -18,7 +18,7 @@
     overflow: hidden;
     border-right: 2px solid white; /* Initial blinking caret */
     white-space: nowrap;
-    animation: typing 3.5s steps(40, end) forwards, blink-caret 0.75s step-end infinite;
+    animation: typing 2.5s steps(20, end) forwards, blink-caret 0.50s step-end infinite;
   }
 
   @keyframes typing {
@@ -31,9 +31,9 @@
     50% { border-color: white; }
   }
 
-  .typing-finished {
+ .typing-finished {
     animation: none;
-    border-right: none; /* Remove blinking caret */
+     border-right: none; /* Remove blinking caret */
   }
 
   /* Ensures the image and text are aligned properly */
@@ -54,7 +54,7 @@
   /* Additional styling for spacing and responsiveness */
   .text-container {
     flex: 1;
-    padding-left: 100px;
+    padding-left: 80px;
     margin-top: 150px;
   }
 
@@ -62,7 +62,7 @@
     flex-shrink: 0;
     text-align: center;
     margin-top: 175px;
-    padding-right: 120px;
+    padding-right: 100px;
   }
 
   img {
